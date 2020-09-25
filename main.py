@@ -47,6 +47,14 @@ def regula(fxo):
             a = xm
 
 
+def iteration(fxo):
+    print("\nGive initial guess : ")
+    xm = input()
+    print("\n Number of iteration")
+    n = input()
+    #TODO the iteration scheme
+
+
 def fxn(fxo, x):
     x = str(x)
     fx = fxo.replace("x", x)
@@ -59,7 +67,10 @@ print("METHOD No. : ")
 mn = input()
 if mn == 1:
     bisection(fxo)
-else:
+elif mn == 2:
     regula(fxo)
+elif mn == 3:
+    iteration(fxo)
+
 
 
