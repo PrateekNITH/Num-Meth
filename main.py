@@ -49,10 +49,28 @@ def regula(fxo):
 
 def iteration(fxo):
     print("\nGive initial guess : ")
-    xm = input()
+    xm = float(input())
     print("\n Number of iteration")
-    n = input()
-    #TODO the iteration scheme
+    n = int(input())
+    for i in range(1, n+1, 1):
+        print("\nITERATION - ", i)
+        xm = fxn(fxo, xm)
+        print("\nXm = ", xm)
+
+
+def newton(fxo):
+    print("\nInput F'(X) : ")
+    difx = input()
+    print("\nGive initial guess : ")
+    xm = float(input())
+    print("\n Number of iteration")
+    n = int(input())
+    for i in range(1, n + 1, 1):
+        print("\nITERATION - ", i)
+        dfx = fxn(difx, xm)
+        fx = fxn(fxo, xm)
+        xm = xm - (fx/dfx)
+        print("\nXm = ", xm)
 
 
 def fxn(fxo, x):
@@ -64,13 +82,13 @@ def fxn(fxo, x):
 
 
 print("METHOD No. : ")
-mn = input()
+mn = int(input())
 if mn == 1:
+    print("\n#######INITIATING BISECTION METHOD##############\n")
     bisection(fxo)
 elif mn == 2:
     regula(fxo)
 elif mn == 3:
     iteration(fxo)
-
-
-
+elif mn == 4:
+    newton(fxo)
