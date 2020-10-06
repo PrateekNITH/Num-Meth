@@ -1,3 +1,7 @@
 # Num-Meth
-This repo is a test repo
-for applying my knowledge of python
+This is a calculator for calculating: -
+-> Roots of given equation
+->Interpolating curve
+-> Numerical integration
+
+......Project Under Progress.......
