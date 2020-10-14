@@ -4,4 +4,6 @@ This is a calculator for calculating: -
 ->Interpolating curve
 -> Numerical integration
 
+You all are going to love it, definitely!!!!
+
 ......Project Under Progress.......
