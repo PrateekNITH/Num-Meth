@@ -3,7 +3,16 @@ import math
 print("Input F(X) : ")
 fxo = input()
 
+def preprocessing(fxo):
+    fx = fxo.replace("^", "**")
+    fx = fx.replace("log", "math.log")
+    fx = fx.replace("cos", "math.cos")
+    fx = fx.replace("sin", "math.sin")
+    fx = fx.replace("tan", "math.tan")
+    fx = fx.replace("factorial", "math.factorial")
+    fx = fx.replace("sqrt", "math.sqrt")
 
+    return fx
 def bisection(fxo):
     print(" Enter a and b : ")
     a = float(input())
