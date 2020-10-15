@@ -90,6 +90,7 @@ def fxn(fxo, x):
     return a
 
 
+fxo = preprocessing(fxo)
 print("METHOD No. : ")
 mn = int(input())
 if mn == 1:
