@@ -91,14 +91,22 @@ def fxn(fxo, x):
 
 
 fxo = preprocessing(fxo)
+
 print("METHOD No. : ")
+#1 is for Bisection method
+#2 is for Regula Falsi Method
+#3 is for Fixed point iteration method
+#4 is for Newton Raphson method
 mn = int(input())
 if mn == 1:
     print("\n#######INITIATING BISECTION METHOD##############\n")
     bisection(fxo)
 elif mn == 2:
+    print("\n#######INITIATING REGULA FALSI METHOD##############\n")
     regula(fxo)
 elif mn == 3:
+    print("\n#######INITIATING FIXED POINT ITERATION METHOD##############\n")
     iteration(fxo)
 elif mn == 4:
+    print("\n#######INITIATING NEWTON RAPHSON METHOD##############\n")
     newton(fxo)
